@@ -1,6 +1,7 @@
-import './globals.css';
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import clsx from 'clsx';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,7 +17,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(
+          'bg-[##f0f0f0] bg-auto bg-scroll bg-left-top bg-repeat text-left text-base font-normal leading-6 text-[#212529]',
+          inter.className
+        )}
+      >
+        {children}
+        <div id='modal'></div>
+      </body>
     </html>
   );
 }
