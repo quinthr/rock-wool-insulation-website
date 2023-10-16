@@ -1,6 +1,7 @@
 import Logo from './Logo';
 import Search from './Search';
 import Cart from './Cart';
+import NavMenu from './NavMenu';
 
 const Header = () => {
   return (
@@ -19,6 +20,14 @@ const Header = () => {
                   </div>
                   <div className='relative min-h-[1px] w-full max-w-[33.33%] overflow-visible px-4 text-right'>
                     <Cart />
+                  </div>
+                  <div className='mt-5 min-h-[1px] w-full max-w-[75%] px-4'>
+                    <NavMenu />
+                  </div>
+                  <div className='relative min-h-[1px] w-full max-w-[25%] px-4'>
+                    <div className='block w-auto flex-wrap text-right'>
+                      <strong>Customer Service</strong>: 84-123-456-789
+                    </div>
                   </div>
                 </div>
               </div>
