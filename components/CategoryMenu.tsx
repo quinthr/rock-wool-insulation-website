@@ -10,34 +10,41 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
-const links: { title: string; href: string }[] = [
+const links: { title: string; href: string; key: string }[] = [
   {
     title: 'Acoustic Insulation',
     href: '/',
+    key: 'acoustic-insulation',
   },
   {
     title: 'Ceiling Insulation',
     href: '/',
+    key: 'ceiling-insulation',
   },
   {
     title: 'Pipe Insulation',
     href: '/',
+    key: 'pipe-insulation',
   },
   {
     title: 'Wall Insulation',
     href: '/',
+    key: 'wall-insulation',
   },
   {
     title: 'Roof Insulation',
     href: '/',
+    key: 'roof-insulation',
   },
   {
     title: 'Paroc Insulation',
     href: '/',
+    key: 'paroc-insulation',
   },
   {
     title: 'Bradford Insulation',
     href: '/',
+    key: 'bradford-insulation',
   },
 ];
 
@@ -52,20 +59,21 @@ const CategoryMenu = () => {
           <NavigationMenuList
             data-aria-orientation='vertical'
             data-orientation='vertical'
-            className='flex w-full flex-col'
+            className='flex w-full flex-col '
           >
-            {links.map((link) => (
+            {links.map((link, index) => (
               <>
                 <NavigationMenuItem
-                  className='relative !mx-0 flex h-16 w-full items-center border border-solid border-[#edb702] bg-[#f8bf00] leading-10 hover:border-white hover:bg-white'
-                  key={link.title}
+                  className='relative !mx-0 flex w-full items-center border border-solid border-[#edb702] bg-[#f8bf00] py-5 leading-[60px] hover:border-white hover:bg-white'
+                  key={link.key}
                 >
-                  <Link href={link.href} legacyBehavior passHref>
+                  <Link href={link.href} key={link.key} legacyBehavior passHref>
                     <NavigationMenuLink
                       className={clsx(
                         navigationMenuTriggerStyle(),
-                        '!bg-transparent px-5 text-base capitalize leading-10 tracking-widest hover:!text-[#f8bf00]'
+                        'h-16 !bg-transparent px-5 py-5 text-2xl capitalize leading-[60px] hover:!text-[#f8bf00]'
                       )}
+                      key={link.key}
                     >
                       {link.title}
                     </NavigationMenuLink>

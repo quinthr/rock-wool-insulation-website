@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import CartSidebar from './CartSidebar';
-import { Link } from 'lucide-react';
 
 const Cart = () => {
   const [ModalIsOpen, setIsOpen] = useState(false);
@@ -22,7 +21,7 @@ const Cart = () => {
         <div className='relative cursor-pointer text-center'>
           <a
             href='#'
-            className='relative flex items-center text-center text-sm font-normal tracking-normal text-black'
+            className='relative flex items-center text-center text-base font-normal tracking-normal text-black'
             onClick={() => openModal()}
           >
             <FontAwesomeIcon

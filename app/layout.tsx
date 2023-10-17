@@ -1,9 +1,13 @@
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import clsx from 'clsx';
 
-const inter = Inter({ subsets: ['latin'] });
+const font = Poppins({
+  weight: ['400', '700'], // Specify the desired font weights
+  style: 'normal', // Specify the font style (normal or italic)
+  subsets: ['latin'], // Specify subsets if needed
+});
 
 export const metadata: Metadata = {
   title: 'Rock-wool Insulation',
@@ -20,7 +24,7 @@ export default function RootLayout({
       <body
         className={clsx(
           'bg-[##f0f0f0] bg-auto bg-scroll bg-left-top bg-repeat text-left text-base font-normal leading-6 text-[#212529]',
-          inter.className
+          font.className
         )}
       >
         {children}

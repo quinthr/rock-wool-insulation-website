@@ -22,7 +22,7 @@ const NavMenu = () => {
               <NavigationMenuLink
                 className={clsx(
                   navigationMenuTriggerStyle(),
-                  'text-base uppercase leading-10 tracking-widest'
+                  'text-2xl uppercase leading-[56px] tracking-[2px]'
                 )}
               >
                 Home
@@ -34,7 +34,7 @@ const NavMenu = () => {
               <NavigationMenuLink
                 className={clsx(
                   navigationMenuTriggerStyle(),
-                  'text-base uppercase leading-10 tracking-widest'
+                  'text-2xl uppercase leading-[56px] tracking-[2px]'
                 )}
               >
                 Shop
@@ -46,7 +46,7 @@ const NavMenu = () => {
               <NavigationMenuLink
                 className={clsx(
                   navigationMenuTriggerStyle(),
-                  'text-base uppercase leading-10 tracking-widest'
+                  'text-2xl uppercase leading-[56px] tracking-[2px]'
                 )}
               >
                 Contact us
@@ -58,7 +58,7 @@ const NavMenu = () => {
               <NavigationMenuLink
                 className={clsx(
                   navigationMenuTriggerStyle(),
-                  'text-base uppercase leading-10 tracking-widest'
+                  'text-2xl uppercase leading-[56px] tracking-[2px]'
                 )}
               >
                 About us
