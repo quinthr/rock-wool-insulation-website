@@ -1,12 +1,13 @@
 import EmblaCarousel from './EmblaCarousel';
 import { EmblaOptionsType } from 'embla-carousel-react';
+
 import '@/styles/base.css';
 import '@/styles/sandbox.css';
 import '@/styles/embla.css';
 
 const Carousel = () => {
   const OPTIONS: EmblaOptionsType = { loop: true };
-  const SLIDE_COUNT = 5;
+  const SLIDE_COUNT = 2;
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
   return (
