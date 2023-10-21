@@ -1,6 +1,7 @@
 import Carousel from '@/components/Carousel';
 import CategoryMenu from '@/components/CategoryMenu';
 import Header from '@/components/Header';
+import ProductColumn from '@/components/ProductColumn';
 import PromoBox from '@/components/PromoBox';
 
 export default function Home() {
@@ -59,10 +60,19 @@ export default function Home() {
                 </h3>
               </div>
             </div>
+            <div className='mx-auto mb-0 mt-[70px] w-full max-w-[1440px] px-4'>
+              <div className='relative -mx-4 flex flex-wrap justify-evenly overflow-hidden p-0'>
+                <div className='-mx-4 flex  w-full max-w-[100%] flex-row flex-wrap justify-evenly'>
+                  <ProductColumn />
+                  <ProductColumn />
+                  <ProductColumn />
+                  <ProductColumn />
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
-      ;
     </>
   );
 }
