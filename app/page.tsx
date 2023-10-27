@@ -3,6 +3,8 @@ import CategoryMenu from '@/components/CategoryMenu';
 import Header from '@/components/Header';
 import ProductColumn from '@/components/ProductColumn';
 import PromoBox from '@/components/PromoBox';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -53,9 +55,42 @@ export default function Home() {
             </div>
             <div className='mx-auto mb-0 mt-24 w-full max-w-[1440px] px-4'>
               <div className='my-0'>
-                <h3 className='relative m-0 flex w-full flex-wrap items-center justify-center text-center text-4xl capitalize leading-none text-black'>
+                <h3 className='relative m-0 flex w-full flex-wrap items-center justify-center text-center text-[30px] capitalize leading-none text-black'>
                   <span className='featured-products-heading relative m-0 font-bold'>
                     Featured Products
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div className='mx-auto mb-0 mt-[70px] w-full max-w-[1440px] px-4'>
+              <div className='relative -mx-4 flex flex-wrap justify-evenly overflow-hidden p-0'>
+                <div className='-mx-4 flex  w-full max-w-[100%] flex-row flex-wrap justify-evenly'>
+                  <ProductColumn />
+                  <ProductColumn />
+                  <ProductColumn />
+                  <ProductColumn />
+                </div>
+              </div>
+            </div>
+            <div className='mx-auto mb-0 mt-[60px] w-full max-w-[1440px] px-4'>
+              <div className='relative -mx-4 flex flex-wrap items-start p-0'>
+                <div className='relative mb-0 mt-8 flex min-h-[1px] w-full px-4'>
+                  <Link href='#'>
+                    <Image
+                      src='/handyman-image-01.png'
+                      height={108}
+                      width={1410}
+                      alt='Handyman Banner'
+                    />
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className='mx-auto mb-0 mt-[60px] w-full max-w-[1440px] px-4'>
+              <div className='my-0'>
+                <h3 className='relative m-0 flex w-full flex-wrap items-center justify-center text-center text-[30px] capitalize leading-none text-black'>
+                  <span className='featured-products-heading relative m-0 font-bold'>
+                    Best Sellers
                   </span>
                 </h3>
               </div>
